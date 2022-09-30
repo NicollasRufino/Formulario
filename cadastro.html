@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/cadastro/cadastro.css">
+  <script src="/cadastro/cadastro.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Área de cadastro</h1>
+  
+  <div id="bloco"> 
+      <form action="cadastro.php" method="POST">
+        <br>
+        <label for="">Nome: </label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="">Data de nascimento: </label>
+        <input type="date">
+        <br>
+        <br>
+        <label for="">Peso: </label>
+        <input type="number">
+        <br>
+        <br>
+        <label for="">Altura: </label>
+        <input type="number">
+        <br>
+        <br>
+        <label for="">Sexo: </label>
+        <select name="sexo" id="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Alergias: </label>
+        <input type="text" placeholder="Alergias...">
+        <br>
+        <br>
+        <label for="">Histórico Médico: </label>
+        <input type="text" placeholder="Histórico Médico...">
+        <br>
+        <br>
+        <br>
+        <button id="botaocadastro" onclick="enviarDados()">Cadastrar</button>
+      </form>
+  </div> 
+</body>
+</html>
